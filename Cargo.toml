@@ -1,0 +1,2 @@
+[workspace]
+members = ["gbpos2csv", "csv2btcpay"]

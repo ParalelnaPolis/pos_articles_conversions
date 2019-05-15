@@ -1,0 +1,16 @@
+[package]
+name = "gbpos2csv"
+description = "A tool for converting General Bytes POS articles to CSV"
+version = "0.1.0"
+authors = ["Martin Habovstiak <martin.habovstiak@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+htmlstream = "0.1.3"
+configure_me = "0.3"
+serde = "1"
+csv = "1"
+
+[build-dependencies]
+"configure_me_codegen" = "0.3"
+

@@ -1,0 +1,15 @@
+[package]
+name = "csv2btcpay"
+description = "A tool for converting articles from CSV format to BTCPayServer yaml format"
+version = "0.1.0"
+authors = ["Martin Habovstiak <martin.habovstiak@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+configure_me = "0.3"
+serde = "1"
+csv = "1"
+serde_yaml = "0.8.9"
+
+[build-dependencies]
+"configure_me_codegen" = "0.3"

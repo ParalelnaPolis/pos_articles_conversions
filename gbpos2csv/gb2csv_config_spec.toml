@@ -1,0 +1,15 @@
+[[param]]
+name = "input"
+type = "std::path::PathBuf"
+optional = false
+doc = "HTML file containing the page with list of articles."
+
+[[param]]
+name = "output"
+type = "std::path::PathBuf"
+optional = false
+doc = "Output CSV file"
+
+[[switch]]
+name = "strip_currency"
+doc = "Removes currency specifier the from currency field"

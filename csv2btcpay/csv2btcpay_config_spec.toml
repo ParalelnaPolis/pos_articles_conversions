@@ -1,0 +1,28 @@
+[[param]]
+name = "input"
+type = "std::path::PathBuf"
+optional = false
+doc = "HTML file containing the page with list of articles."
+
+[[param]]
+name = "output"
+type = "std::path::PathBuf"
+optional = false
+doc = "Output CSV file"
+
+[[param]]
+name = "title_field"
+type = "usize"
+doc = "Index of field containing the title"
+optional = false
+
+[[param]]
+name = "price_field"
+type = "usize"
+doc = "Index of field containing the price"
+optional = false
+
+[[param]]
+name = "prefix_field"
+type = "usize"
+doc = "Index of field containing a prefix to the title"
