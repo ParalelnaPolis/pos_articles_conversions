@@ -49,7 +49,7 @@ fn run() -> Result<(), Error> {
     let writer = mapping_try!(std::fs::File::create(&config.output), config.output, |error, file| Error::File { file, error, operation: "write to"});
     let writer = io::BufWriter::new(writer);
 
-    let mut template = std::collections::HashMap::new();
+    let mut template = std::collections::BTreeMap::new();
 
     for item in reader.records() {
         let item = mapping_try!(item, config.input, |error, file| Error::Csv { file, error, });
