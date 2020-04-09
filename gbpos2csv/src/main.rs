@@ -66,7 +66,7 @@ fn run() -> Result<(), Error> {
             (Html, "html", Closing) => state = Initial,
             (Html, "body", Opening) => state = Body,
             (Body, "body", Closing) => state = Html,
-            (Body, "div", Opening) => if attr_iter(&tag.attributes).map(drop_first).any(|attr| attr.name == "id" && attr.value == "tableScrollable") { state = Div },
+            (Body, "div", Opening) => if attr_iter(&tag.attributes).map(drop_first).any(|attr| attr.name == "class" && attr.value == "table-scrollable") { state = Div },
             (Div, "div", Closing) => state = Body,
             (Div, "table", Opening) => state = Table,
             (Table, "tr", Opening) => state = Tr,
